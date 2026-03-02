@@ -28,7 +28,7 @@ public class ProdutoController {
         return produto;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public Produto obterPorId(@PathVariable("id") String id){
 
 //        Optional<Produto> produto = produtoRepository.findById(id);
